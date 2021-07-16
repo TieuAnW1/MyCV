@@ -1,0 +1,233 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,500,700,wght@100&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background: #585c68;
+	font-size: 14px;
+	line-height: 22px;
+	color: #555;
+}
+.bold{
+	font-size: 18px;
+	font-weight: 550;
+	text-transform: uppercase;
+}
+.bold_name{
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.semi_bold{
+	font-size: 16px;
+	font-weight: 500;
+}
+.wrapper{
+	width: 800px;
+	height:auto;
+	display: flex;
+	margin: 50px auto;
+}
+
+/*-----Info_left--------*/
+
+.wrapper .info_left{
+	width: 280px;
+	background: #0bb5f4;
+}
+.wrapper .info_left .profile{
+	width: 100%;
+	height: 280px;
+}
+.wrapper .info_left .profile img{
+	width: 100%;
+	height: 100%;
+	border: 25px solid #0bb5f4;
+	border-radius: 50%;
+}
+.wrapper .info_left .content{
+	padding: 0px 25px;
+}
+.wrapper .title{
+	margin-bottom: 20px;
+	/*margin-top: 10px;*/
+}
+.wrapper .info_left .bold{
+	color: #fff;
+}
+.wrapper .info_left .regular{
+	color: #b1eaff;
+	font-size: 18px;
+}
+.wrapper .item{
+	padding: 20px 0px;
+	border-bottom: 2px solid #b1eaff;
+}
+.wrapper .item:first-child{
+	/*padding: 25px 0px;*/
+	border-top: 2px solid #b1eaff;
+}
+.wrapper .info_left .item:last-child,
+.wrapper .info_right .item:last-child{
+    border-bottom: 0px;
+}
+.wrapper .info_left ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.wrapper .info_left ul li:last-child{
+	margin-bottom: 0px;
+}
+.wrapper .info_left ul li .icon{
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	color: #0bb5f4;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 16px;
+	position: relative;
+}
+.wrapper .icon i,
+.wrapper .info_right .hobby ul li i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.wrapper .info_left ul li .data{
+	color: #b1eaff;
+}
+.wrapper .info_left .skills ul li{
+	color: #b1eaff;
+	justify-content: space-between;
+}
+.wrapper .info_left .skills ul li .skill_name{
+	width: 25%;
+}
+.wrapper .info_left .skills ul li .skill_progress{
+	width: 60%;
+	margin: 0 5px;
+	height: 6px;
+	background: #009fd9;
+	position: relative;
+}
+.wrapper .info_left .skills ul li .skill_progress span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #fff;
+}
+.wrapper .info_left .skills ul li .skill_per{
+	width: 15%;
+}
+
+/*=========================================*/
+
+/*info_right*/
+
+.wrapper .info_right{
+	width: 520px;
+	background: #fff;
+	padding: 25px; 
+}
+.wrapper .info_right .bold{
+	color: #0bb5f4;
+}
+.wrapper .info_right .work ul,
+.wrapper .info_right .education ul{
+	padding-left: 40px;
+	overflow: hidden;
+}
+.wrapper .info_right ul li{
+	position: relative;
+}
+.wrapper .info_right ul li .date{
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+.wrapper .info_right ul li .viec{
+	margin-bottom: 15px;
+}
+.wrapper .info_right ul li:last-child .viec{
+	margin-bottom: 2px;
+}
+/*vòng tròn*/
+.wrapper .info_right .work ul li:before,
+.wrapper .info_right .education ul li:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -25px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 2px solid #0bb5f4;
+}
+/*đường thẳng dưới vòng tròn*/
+.wrapper .info_right .work ul li:after{
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: -21px;
+	width: 3px;
+	height: 105px;
+    background: #0bb5f4;
+}
+.wrapper .info_right .education ul li:after{
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: -21px;
+	width: 3px;
+	height: 82px;
+    background: #0bb5f4;
+}
+/*hết đường thẳng*/
+.wrapper .info_right .hobby ul{
+	display: flex;
+	justify-content: space-between;
+}
+.wrapper .info_right .hobby ul li{
+	width: 80px;
+	height: 80px;
+	border: 2px solid #0bb5f4;
+	border-radius: 50%;
+	position: relative;
+	color: #0bb5f4;
+}
+.wrapper .info_right .hobby ul li i{
+	font-size: 30px;
+}
+/*đường kẻ ngang*/
+.wrapper .info_right .hobby ul li:before{
+	content: "";
+	position: absolute;
+	top: 40px;
+	right: -120px;
+	width: 118px;
+	height: 2px;
+	background: #0bb5f4;
+}
+.wrapper .info_right .hobby ul li:last-child:before{
+	display: none;
+}
+.wrapper .info_right .item .h p  {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	text-decoration-line: underline;
+}
+.cuoi{
+	padding-left: 21px;
+}
